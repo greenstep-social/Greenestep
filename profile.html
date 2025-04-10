@@ -8,22 +8,12 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <div class="profile-header">
-            <div class="profile-photo" id="profilePhoto" onclick="triggerFileInput()"></div>
-            <input type="file" id="fileInput" accept="image/*" style="display: none;" onchange="changePhoto(event)">
-            <span id="profileUsername"></span>
-        </div>
+    <div class="profile-container">
+        <h2>Ваш профиль</h2>
+        <p><strong>Логин:</strong> <span id="profileUsername"></span></p>
         <h3>Ваши рекомендации:</h3>
-        <ul id="recommendationsList">
-            <li>Сортируйте мусор для переработки.</li>
-            <li>Используйте многоразовые изделия.</li>
-            <li>Сдавайте макулатуру на переработку.</li>
-            <li>Сдавайте одежду в благотворительные фонды.</li>
-
-        </ul>
+        <ul id="recommendationsList"></ul>
     </div>
 </body>
 </html>
-
 
