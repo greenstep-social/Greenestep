@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="profile.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-header">
+            <div class="profile-photo" id="profilePhoto" onclick="triggerFileInput()"></div>
+            <input type="file" id="fileInput" accept="image/*" style="display: none;" onchange="changePhoto(event)">
+            <span id="profileUsername"></span>
+        </div>
+        <h3>Ваши рекомендации:</h3>
+        <ul id="recommendationsList">
+            <li>Сортируйте мусор для переработки.</li>
+            <li>Используйте многоразовые изделия.</li>
+            <li>Сдавайте макулатуру на переработку.</li>
+            <li>Сдавайте одежду в благотворительные фонды.</li>
+
+        </ul>
+    </div>
+</body>
+</html>
+
+
